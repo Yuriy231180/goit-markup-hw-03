@@ -47,8 +47,8 @@ button {
 }
 /* header`s styles */
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-header-container {
@@ -63,13 +63,13 @@ button {
 
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .contacts-list {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .page-header {
@@ -137,7 +137,7 @@ button {
 }
 
 .section-one-title {
-  width: 496px;
+  max-width: 496px;
   color: var(--white, #fff);
   text-align: center;
   font-size: 56px;
@@ -164,6 +164,7 @@ button {
   padding: 16px 32px;
   border-radius: 4px;
   border: none;
+  min-width: 169px;
 }
 /* saction two styles*/
 .visually-hidden {
@@ -181,7 +182,7 @@ button {
 
 .section-two-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .section-two-item {
@@ -227,12 +228,17 @@ button {
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .section-three-item {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section-three-content {
+  padding: 32px 0;
 }
 
 .section-three-item-title {
@@ -242,18 +248,16 @@ button {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .section-three-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .section-three-text {
   color: var(--slate, #434455);
   text-align: center;
-  padding-bottom: 32px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5; /* 150% */
@@ -275,6 +279,12 @@ button {
   row-gap: 48px;
 }
 
+.section-four-content {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .section-four-title {
   color: var(--navyblue, #2e2f42);
   text-align: center;
@@ -283,7 +293,7 @@ button {
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .section-four-item {
@@ -297,8 +307,7 @@ button {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .section-four-text {
@@ -327,6 +336,8 @@ button {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logotype-studio {
   color: var(--cloud, #f4f4fd);
@@ -339,5 +350,4 @@ button {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
-  padding-top: 16px;
 }
