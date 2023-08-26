@@ -132,6 +132,7 @@ button {
 
 .section-one {
   background: var(--navyblue, #2e2f42);
+  padding: 188px 0;
   /*text-align: center;*/
 }
 
@@ -143,7 +144,7 @@ button {
   font-weight: 700;
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
-
+  padding-bottom: 48px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -160,6 +161,9 @@ button {
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
 }
 /* saction two styles*/
 .visually-hidden {
@@ -207,9 +211,12 @@ button {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
+/* Section three styles*/
 
 .section-three {
   background: var(--cloud, #f4f4fd);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section-three-title {
@@ -220,32 +227,47 @@ button {
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
 
 .section-three-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
 }
 
 .section-three-item-title {
   color: var(--navyblue, #2e2f42);
-
+  text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+.section-three-list {
+  display: flex;
+  column-gap: 24px;
 }
 
 .section-three-text {
   color: var(--slate, #434455);
-
+  text-align: center;
+  padding-bottom: 32px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
 
+/* Section four styles*/
+
 .section-four {
   background: #fff;
+}
+
+.section-four-list {
+  display: flex;
 }
 
 .section-four-title {
